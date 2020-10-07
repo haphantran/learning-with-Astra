@@ -33,7 +33,10 @@ CREATE TABLE IF NOT EXISTS comments_by_video (
 Show us your own tables - for the data model of your choice.
 
 ```
-Update with your own table
+spacecraft_journey_catalog     spacecraft_temperature_over_time
+spacecraft_pressure_over_time  spacecraft_location_over_time   
+comments_by_user               comments_by_video               
+spacecraft_speed_over_time   
 ```
 
 ## Insert some data ##
@@ -57,7 +60,12 @@ Your data goes here
 Now show the output, for example:
 
 ```
-SELECT * FROM <your table>;
+select * from comments_by_user;
+
+ userid                               | commentid                            | comment                              | videoid
+--------------------------------------+--------------------------------------+--------------------------------------+--------------------------------------
+ 11111111-1111-1111-1111-111111111111 | 5e58bcc0-08c7-11eb-b6d0-2f7e43d4e9e5 | Soo many comments for the same video | 12345678-1234-1111-1111-111111111111
+ 11111111-1111-1111-1111-111111111111 | 5def4c90-08c7-11eb-b6d0-2f7e43d4e9e5 |           I keep watching this video | 12345678-1234-1111-1111-111111111111
 ...
 ...
 ...
