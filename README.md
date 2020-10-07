@@ -103,7 +103,16 @@ https://docs.datastax.com/en/cql-oss/3.3/cql/cql_reference/cqlReferenceTOC.html
 Let us know what you find:
 
 ```
-Update with your own examples
+update comments_by_user set comment = 'This is new valu e for comment' where commentid = 5def4c90-08c7 =  11111111-1111-1111-1111-111111111111;
+
+
+token@cqlsh:spacecraft> select * from comments_by_user 
+              ... ;
+
+ userid                               | commentid                            | comment                              | videoid
+--------------------------------------+--------------------------------------+--------------------------------------+--------------------------------------
+ 11111111-1111-1111-1111-111111111111 | 5e58bcc0-08c7-11eb-b6d0-2f7e43d4e9e5 | Soo many comments for the same video | 12345678-1234-1111-1111-111111111111
+ 11111111-1111-1111-1111-111111111111 | 5def4c90-08c7-11eb-b6d0-2f7e43d4e9e5 |       This is new valu e for comment | 12345678-1234-1111-1111-111111111111
 ```
 
 Or connect, read and write to your Astra database via other methods.
